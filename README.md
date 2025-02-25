@@ -23,7 +23,7 @@ Este projeto faz parte do meu aplicativo de Geração Aumentada por Recuperaçã
 
 1. Clone o repositório:
    ```bash
-   git clone [https://github.com/alissonlouly/test-ollama-rag.git](https://github.com/alissonlouly/test-ollama-rag.git)
+   git clone https://github.com/alissonlouly/test-ollama-rag.git
    cd teste-ollama-rag
    ```
 2. Instale os pacotes necessários:
