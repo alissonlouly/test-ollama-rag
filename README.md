@@ -1,62 +1,58 @@
-# Simple RAG App
+# Aplicativo RAG Simples
 
-## Overview
+## Visão Geral
 
-This project is a part of my self-development Retrieval-Augmented Generation (RAG) application that allows users to ask questions about the content of a PDF files placed in folder. The app uses techniques to provide accurate answers based on the document's content. The application leverages Ollama, Llama 3-8B, LangChain, and FAISS for its operations.
+Este projeto faz parte do meu aplicativo de Geração Aumentada por Recuperação (RAG) em autodesenvolvimento, que permite aos usuários fazer perguntas sobre o conteúdo de arquivos PDF colocados em uma pasta. O aplicativo usa técnicas para fornecer respostas precisas com base no conteúdo do documento. O aplicativo utiliza Ollama, Llama 3-8B, LangChain e FAISS para suas operações.
 
-## Features
+## Funcionalidades
 
-- **Ask Questions About PDFs:** Simply place a PDF file in the `data` folder or upload from Web UI and start asking questions about its content.
-- **LLM Models:** Utilizes Ollama and Llama 3-8B for generating responses.
-- **Efficient Document Retrieval:** Uses LangChain and FAISS for efficient document retrieval and processing (PDF Only).
-- **Duplicate Handling:** The app checks the vector database for duplicates and avoids adding them if they already exist.
+- **Faça Perguntas Sobre PDFs:** Basta colocar um arquivo PDF na pasta `data` ou fazer o upload pela interface Web e começar a fazer perguntas sobre seu conteúdo.
+- **Modelos LLM:** Utiliza Ollama e Llama 3-8B para gerar respostas.
+- **Recuperação Eficiente de Documentos:** Usa LangChain e FAISS para recuperação e processamento eficientes de documentos (Somente PDF).
+- **Tratamento de Duplicados:** O aplicativo verifica o banco de dados de vetores em busca de duplicados e evita adicioná-los se já existirem.
 
-## Getting Started
+## Começando
 
-### Prerequisites
+### Pré-requisitos
 
-- Python 3.8 or higher
-- Required Python packages (see `requirements.txt`)
-- Ollama Installation with Llama 3 installed
+- Python 3.8 ou superior
+- Pacotes Python necessários (veja `requirements.txt`)
+- Instalação do Ollama com o Llama 3 instalado
 
-### Installation
+### Instalação
 
-1. Clone the repository:
+1. Clone o repositório:
    ```bash
-   git clone https://github.com/emre570/simple-rag-app.git
+   git clone [https://github.com/alissonlouly/test-ollama-rag.git](https://github.com/alissonlouly/test-ollama-rag.git)
    cd simple-rag-app
    ```
-2. Install the required packages:
+2. Instale os pacotes necessários:
    ```bash
    pip install -r requirements.txt
    ```
-3. Download Ollama and install LLM using Ollama:
+3. Baixe o Ollama e instale o LLM usando o Ollama:
    ```bash
    ollama pull llama3
    ```
 
-### Usage
+### Uso
 
-1. Place your PDF file(s) in the `data` folder or upload it from Web UI.
-2. Run the application:
+1. Coloque seu(s) arquivo(s) PDF na pasta `data` ou faça o upload pela interface Web.
+2. Execute o aplicativo:
 
    ```bash
-   streamlit run [path_to_app_folder]/webui.py
+   streamlit run [caminho_para_pasta_do_aplicativo]/webui.py
    ```
 
-   Alternatively, you can open `webui.bat` file.
-3. Enter your questions when prompted. Type 'exit' to quit the application.
+   Alternativamente, você pode abrir o arquivo `webui.bat`.
+3. Digite suas perguntas quando solicitado. Digite 'exit' para sair do aplicativo.
 
-## WIP Features
+## Funcionalidades Em Andamento
 
-- [X] **Web UI:** A web-based user interface for easier interaction.
-- [X] **Conversation Memory:** The app will remember previous interactions during runtime for better context handling.
-- [ ] **Support for Multiple Document Types:** Extend functionality to work with Powerpoint slides, markdown files, text files, and more.
+- [X] **Interface Web:** Uma interface de usuário baseada na Web para facilitar a interação.
+- [X] **Memória de Conversa:** O aplicativo lembrará as interações anteriores durante a execução para melhor tratamento do contexto.
+- [ ] **Suporte para Vários Tipos de Documentos:** Estender a funcionalidade para trabalhar com slides do Powerpoint, arquivos markdown, arquivos de texto e muito mais.
 
-## Contributing
+## Contribuindo
 
-Contributions are welcome! Please fork the repository and create a pull request with your changes. For changes or see any mistakes, please open an issue first to discuss what you would like to change.
-
-## Contact
-
-For any questions or suggestions, please open an issue in the repository.
+Contribuições são bem-vindas! Por favor, faça um fork do repositório e crie um pull request com suas alterações. Para alterações ou caso encontre algum erro, abra um issue primeiro para discutir o que você gostaria de mudar.
